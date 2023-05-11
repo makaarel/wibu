@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <section class="home">
+            <header>
+                <a href="#" class="logo">WIBU</a>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Join</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </header>
+            <div class="content">
+                <div class="textBox">
+                    <h2>Lorem<br><span>Ipsum.</span></h2>
+                    <p>
+                        WIBU atau Wikusama Bulutangkis adalah ekstrakurikuler bulutangkis 
+                        di SMK Telkom Malang dengan tujuan mengembangkan bakat dan minat 
+                        siswa serta membentuk karakter yang kuat. WIBU memiliki pelatih 
+                        berpengalaman dan fasilitas olahraga yang memadai. Kegiatannya meliputi 
+                        latihan rutin, persiapan turnamen, dan kegiatan sosial.
+                    </p>
+                    <a href="#">View All Products</a>
+                </div>
+                <div class="imgBox">
+                    <img src="img/badminton.png" alt="" class="sports">
+                </div>
+            </div>
+            <ul class="thumb">
+                <li><img src="img/badminton4.png" onclick="imgSlider('img/1.png'); changeColor('#a18c02');"></li>
+                <li><img src="img/badminton2.png" onclick="imgSlider('img/4.png'); changeColor('#2236b4');"></li>
+                <li><img src="img/badminton3.png" onclick="imgSlider('img/badminton.png'); changeColor('#566a3b');"></li>
+            </ul>
+        </section>
+    </body>
+</html>
+
+<script>
+    function imgSlider(someThing){
+        document.querySelector('.sports').src = someThing;
+    }
+    function changeColor(color){
+        const sec = document.querySelector('.home');
+        sec.style.background = color;
+    }
+</script>
